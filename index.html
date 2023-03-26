@@ -37,12 +37,7 @@
             </li>
           </ul>
         </nav>
-        <button type="button" class="mobile-menu-btn" >
-        <svg width="32" height="22">
-              <use href="../images/symbol-defs2.svg#icon-telegram"></use>
-            </svg>
-        </button>
-        <address class="header-address">
+           <address class="header-address">
           <ul class="header-list-address">
             <li class="header-item">
               <a href="mailto:info@devstudio.com" class="header-adrlink"
@@ -56,6 +51,73 @@
             </li>
           </ul>
         </address>
+        <button type="button" class="menu-toggle js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu" >
+        <svg class="burger" width="32" height="22" aria-label="Mobile menu switch">
+              <use class="icon-menu" href="/images/symbol-defs2.svg#icon-menu-hamburger"></use>
+            </svg>
+        </button>
+<nav class="menu-container js-menu-container" id="mobile-menu">
+ <button class="menu-toggle js-close-menu">
+        <svg width="32" height="22">
+         <use class="icon-close" href="/images/symbol-defs2.svg#close-x"></use>
+        </svg>
+      </button>
+          <ul class="mobile-menu">
+            <li class="">
+              <a class="link" href="">Studio</a>
+            </li>
+            <li class="">
+              <a class="link" href="./portfolio.html">Portfolio</a>
+            </li>
+            <li class="">
+              <a class="link" href="">Contacts</a>
+            </li>
+             <li class="lala">
+              <a href="tel:+110001111111" class="phone-link link"
+                >+11 (000) 111-11-11</a
+              >
+            </li>
+            <li class="">
+              <a href="mailto:info@devstudio.com" class="mail-link link"
+                >info@devstudio.com</a
+              >
+            </li>
+            <div class="social-box"> 
+       
+        <ul class="menu-social-list">
+          <li class="menu-social-item"><a class="menu-social-link"
+             href="">
+            <svg class="menu-social-icon">
+              <use href="./images/symbol-defs2.svg#instagram"  ></use>
+            </svg>
+            </a></li>
+          <li class="menu-social-item"><a class="menu-social-link"
+             href="">
+            <svg class="menu-social-icon">
+              <use href="./images/symbol-defs2.svg#twitter"></use>
+            </svg>
+            </a></li>
+          <li class="menu-social-item"><a class="menu-social-link"
+             href="">
+            <svg class="menu-social-icon">
+              <use href="./images/symbol-defs2.svg#facebook"></use>
+            </svg>
+            </a></li>
+          <li class="menu-social-item"><a class="menu-social-link"
+             href="">
+            <svg class="menu-social-icon">
+              <use href="./images/symbol-defs2.svg#linkedin"></use>
+            </svg>
+            </a></li>
+        </ul>
+      </div>
+          </ul>
+        </nav>
+        
+        </address>
+     
       </div>
     </header>
     <main>
@@ -471,7 +533,9 @@
          </form>
       </div> 
     </div>
-  <script src="./js/modal.js"></script> -->
+  -->
+   <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js "></script>
 </body>
   </body>
 </html>
