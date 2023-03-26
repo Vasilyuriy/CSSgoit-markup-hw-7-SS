@@ -1,0 +1,46 @@
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1161px;
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
+  .header-logo {
+    margin-right: 76px;
+  }
+  .header-item:not(:last-child) {
+    margin-right: 40px;
+  }
+  .header-address {
+    margin-left: auto;
+  }
+  .hero {
+    padding-top: 188px;
+    padding-bottom: 188px;
+    text-align: center;
+    background-position: center;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url("../images/hero-bg-desktop1x.jpg");
+  }
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero {
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url("../images/hero-bg-desktop2x-min.jpg");
+    }
+  }
+  .hero-title {
+    max-width: 496px;
+    font-size: 56px;
+    line-height: 1.07;
+    margin-bottom: 48px;
+  }
+}

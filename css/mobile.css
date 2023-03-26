@@ -1,0 +1,9 @@
+@media screen and (min-width: 428px) {
+  .container {
+    max-width: 427px;
+    margin: 0 auto;
+  }
+  .header-list {
+    display: none;
+  }
+}
