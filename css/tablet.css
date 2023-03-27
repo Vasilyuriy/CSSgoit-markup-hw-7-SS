@@ -112,8 +112,56 @@
     font-size: 56px;
     line-height: 1.07;
     margin-bottom: 36px;
+    text-align: left;
   }
-  .advntg-box {
-    display: none;
+
+  .advntg-container {
+    display: flex;
+  }
+  .advntg-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 24px;
+  }
+  .advntg-item {
+  }
+  .advntg-item:nth-last-child(-n + 2) {
+    margin-bottom: 0;
+    margin-right: 0;
+  }
+  .advntg-item:nth-child(2n) {
+    margin-right: 0;
+  }
+  .advntg-item {
+    width: calc((100% - 56px) / 2);
+  }
+
+  .advntg-svg-item {
+    width: 64px;
+    height: 64px;
+  }
+  .team-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 24px;
+  }
+  .team-item {
+    margin-bottom: 62px;
+  }
+  .team-item.team-item:nth-last-child(-n + 2) {
+    margin-bottom: 0;
+  }
+
+  .customers-list {
+  }
+  .customers-item {
+    display: flex;
+    width: 168px;
+    height: 88px;
+    margin-right: 16px;
+  }
+  .customers-item:nth-last-child(-n + 2) {
+    margin-bottom: 0;
   }
 }
