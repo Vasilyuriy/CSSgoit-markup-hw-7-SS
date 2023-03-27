@@ -216,7 +216,7 @@ button {
 /* HERO SECTION */
 .hero {
   width: 100%;
-  max-width: 426px;
+  max-width: 428px;
   margin-left: auto;
   margin-right: auto;
   padding-top: 112px;
@@ -280,8 +280,6 @@ button {
 .hero-btn:hover {
   background-color: var(--hoover-color);
 }
-*/
-
 
 /* +++++++++++++++++++++++++++ADVANTAGES+++++++++++++++++++++  */
 
@@ -289,9 +287,6 @@ button {
   .advntg-box {
     display: none;
   }
-}
-
-@media screen {
 }
 
 .advntg-title-hide {
@@ -395,7 +390,9 @@ button {
 .team-list {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  max-width: 264px;
+  margin: 0 auto;
+  gap: 72px;
 }
 
 .team-item {
@@ -431,11 +428,10 @@ button {
 
 .team-social-list {
   display: flex;
+  flex-direction: row;
+  justify-content: center;
   gap: 24px;
   margin-top: 8px;
-  margin-left: 16px;
-  justify-items: center;
-  align-items: center;
 }
 .team-social-item {
   width: 40px;
@@ -476,7 +472,7 @@ button {
 /* <!--OUR TEAM--> */
 
 /* CUSTOMERS */
-/* .customers {
+.customers {
   padding-bottom: 120px;
 }
 .head-customers {
@@ -490,12 +486,14 @@ button {
   margin-top: 72px;
   gap: 24px;
   display: flex;
+  flex-direction: column;
 }
 .customers-item {
   border-radius: 4px;
   width: 168px;
   height: 88px;
   box-shadow: rgba(0, 0, 0, 0.25);
+  width: calc((100% - 26px) / 2);
 }
 .customers-icon {
   width: 168px;
@@ -505,6 +503,7 @@ button {
 }
 .customers-link {
   display: flex;
+
   justify-items: center;
   justify-content: center;
   align-items: center;
@@ -524,7 +523,7 @@ button {
 .customers-link:focus {
   color: #404bbf;
   border-color: #404bbf;
-} */
+}
 
 /* FOOTER*/
 /* .footer {
