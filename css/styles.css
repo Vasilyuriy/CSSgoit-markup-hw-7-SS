@@ -208,10 +208,17 @@ button {
   background-color: #404bbf;
 }
 .menu-contacts {
+  margin-top: auto;
+  display: flex;
+  flex-direction: column;
 }
 
 /* HERO SECTION */
 .hero {
+  width: 100%;
+  max-width: 426px;
+  margin-left: auto;
+  margin-right: auto;
   padding-top: 112px;
   padding-bottom: 112px;
   background-color: var(--headers-color);
@@ -278,8 +285,13 @@ button {
 
 /* +++++++++++++++++++++++++++ADVANTAGES+++++++++++++++++++++  */
 
-@media and (min-width: 0px) and (max-width: 1199px) {
-  display: none;
+@media screen and (max-width: 1199px) {
+  .advntg-box {
+    display: none;
+  }
+}
+
+@media screen {
 }
 
 .advntg-title-hide {
@@ -398,6 +410,7 @@ button {
 
 .team-img {
   margin-bottom: 32px;
+  width: 100%;
 }
 .team-item-title {
   margin-bottom: 8px;
