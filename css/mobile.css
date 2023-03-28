@@ -3,10 +3,12 @@
     max-width: 428px;
     margin: 0 auto;
   }
-  .header-list {
-    display: none;
-  }
+
   .advntg-box {
     display: none;
+  }
+  .modal {
+    width: 392px;
+    height: 586px;
   }
 }
