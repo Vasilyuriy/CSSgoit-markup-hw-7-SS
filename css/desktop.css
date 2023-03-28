@@ -5,13 +5,19 @@
   .header-logo {
     margin-right: 76px;
   }
+  .header-list-address {
+    display: flex;
+  }
   .header-item:not(:last-child) {
     margin-right: 40px;
   }
   .header-address {
     margin-left: auto;
   }
-  .hero {
+  .header-item-address:not(:last-child) {
+    margin-right: 40px;
+  }
+  .header-item-address .header-item-address .hero {
     max-width: 1440px;
     padding-top: 188px;
     padding-bottom: 188px;
@@ -90,9 +96,12 @@
     align-items: center;
     justify-items: center;
   }
+  .modal {
+    width: 392px;
+    height: 584px;
+  }
 }
 
-/* 
 footer {
   background-color: var(--headers-color);
   padding-top: 100px;
@@ -239,4 +248,4 @@ footer {
   height: 24px;
   fill: var(--hero-text-color);
   margin-left: 16px;
-} */
+}

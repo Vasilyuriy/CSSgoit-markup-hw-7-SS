@@ -39,19 +39,19 @@
         </nav>
            <address class="header-address">
           <ul class="header-list-address">
-            <li class="header-item">
+            <li class="header-item-address ">
               <a href="mailto:info@devstudio.com" class="header-adrlink"
                 >info@devstudio.com</a
               >
             </li>
-            <li class="header-item">
+            <li class="header-item-address">
               <a href="tel:+110001111111" class="header-adrlink"
                 >+11 (000) 111-11-11</a
               >
             </li>
           </ul>
         </address>
-        <button type="button" class="menu-toggle js-open-menu"
+        <button type="button" class="menu-btn-open js-open-menu"
           aria-expanded="false"
           aria-controls="mobile-menu" >
         <svg class="burger" width="32" height="22" aria-label="Mobile menu switch">
@@ -59,28 +59,28 @@
             </svg>
         </button>
 <div class="menu-container js-menu-container" id="mobile-menu">
- <button class="menu-toggle js-close-menu">
+ <button class="menu-btn-close js-close-menu">
         <svg width="32" height="22">
          <use class="icon-close" href="./images/symbol-defs2.svg#close-x"></use>
         </svg>
       </button>
           <ul class="mobile-menu">
-            <li class="">
-              <a class="link" href="">Studio</a>
+            <li class="mobile-menu-item">
+              <a class="nav-menu-link" href="">Studio</a>
             </li>
-            <li class="">
-              <a class="link" href="./portfolio.html">Portfolio</a>
+            <li class="mobile-menu-item">
+              <a class="nav-menu-link" href="./portfolio.html">Portfolio</a>
             </li>
-            <li class="">
-              <a class="link" href="">Contacts</a>
+            <li class="mobile-menu-item">
+              <a class="nav-menu-link" href="">Contacts</a>
             </li>
             <div class="address-social-wrap"></div>
-            <ul class="menu-contacts">
-             <li class="">
-              <a href="tel:+110001111111" class="phone-link link">+11 (000) 111-11-11</a>
+            <ul class="mobile-menu-contacts">
+             <li class="mobile-address-item">
+              <a href="tel:+110001111111" class="phone-menu-link ">+11 (000) 111-11-11</a>
             </li>
-            <li class="">
-              <a href="mailto:info@devstudio.com" class="mail-link link">info@devstudio.com</a>
+            <li class="mobile-address-item mail">
+              <a href="mailto:info@devstudio.com" class="mail-menu-link ">info@devstudio.com</a>
             </li>
             </ul>
         <ul class="menu-social-list">
@@ -411,7 +411,9 @@
                                         <!-- +++++++++++++++++++++++++++FOOTER++++++++++++++++++++++++++++++++ -->
     <footer class="footer">
       <div class="container footer-container">
-        <div>
+        
+        <div class="footer-box-wrap">
+          <div >
         <a class="footer-logo" href="./index.html"> <span>Web</span>Studio</a>
         <p class="footer-t">
           Increase the flow of customers and sales for your business with digital
@@ -446,11 +448,11 @@
             </svg>
             </a></li>
         </ul>
-      </div>
+      </div></div>
        
-   
+
       <div class="footer-box-with-frm">
-        <p class="footer-p">Subscribe</p>
+        <p class="footer-frm-head">Subscribe</p>
         <form class="footer-frm">
           <input class="inpt-footer-email" type="email" placeholder="E-mail" name="users-email">
           <button type="submit" class="btn-submit">Subscribe<svg
