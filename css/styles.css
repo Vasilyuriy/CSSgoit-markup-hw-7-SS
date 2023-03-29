@@ -39,8 +39,8 @@ button {
 }
 
 .section {
-  padding-top: 120px;
-  padding-bottom: 120px;
+  padding-top: 96px;
+  padding-bottom: 96px;
 }
 
 .container {
@@ -248,23 +248,21 @@ button {
 
 /* HERO SECTION */
 .hero {
-  width: 100%;
   max-width: 428px;
   margin-left: auto;
   margin-right: auto;
   padding-top: 112px;
   padding-bottom: 112px;
   background-color: var(--headers-color);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  text-align: center;
   background-image: linear-gradient(
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
     url("../images/hero-bg-mobile1x-min.jpg");
-
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center;
-  text-align: center;
 }
 
 @media (min-device-pixel-ratio: 2),
@@ -364,33 +362,9 @@ button {
   margin-bottom: 0;
 }
 
-/* EXAMPLES OF WORK */
 .exm {
   display: none;
 }
-/* .exm-container {
-  display: flex;
-}
-.exm {
-  padding-bottom: 120px;
-}
-.exm-title {
-  margin-bottom: 72px;
-  font-size: 36px;
-  line-height: 1.1;
-  text-align: center;
-  letter-spacing: 0.02em;
-}
-.exm-list {
-  display: flex;
-}
-.exm-item:not(:last-child) {
-  margin-right: 24px;
-}
-
-.exm-img {
-} */
-
 /* OUR TEAM */
 
 .team {
@@ -567,7 +541,6 @@ button {
 .footer-container {
   display: flex;
   flex-direction: column;
-  align-items: center;
 }
 .footer-logo {
   display: block;
