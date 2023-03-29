@@ -11,4 +11,12 @@
     width: 392px;
     height: 586px;
   }
+  .mobile-address-item {
+    font-size: 36px;
+    line-height: 1.1;
+  }
+  .menu-social-list {
+    display: flex;
+    gap: 56px;
+  }
 }

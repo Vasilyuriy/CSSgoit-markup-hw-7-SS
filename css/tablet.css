@@ -183,6 +183,11 @@
     width: 392px;
     height: 586px;
   }
+  .footer-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 565px;
+  }
 
   .footer-box-wrap {
     display: flex;
@@ -194,8 +199,11 @@
     align-items: baseline;
   }
   .footer-logo {
+    text-align: left;
   }
-
+  .footer-p {
+    text-align: left;
+  }
   .social-box {
     margin-top: 0;
     margin-left: 24px;
