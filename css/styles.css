@@ -541,6 +541,7 @@ button {
 .footer-container {
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 .footer-logo {
   display: block;

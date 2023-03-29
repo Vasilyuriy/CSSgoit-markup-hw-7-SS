@@ -215,13 +215,13 @@
   }
 }
 
-@media screen and (max-width: 1158px) {
+@media screen and (min-width: 767px) and (max-width: 1158px) {
   .team-item:nth-child(2n) {
     margin-right: 0;
   }
 }
 
-@media screen and (max-width: 1158px) {
+@media screen and (min-width: 767px) and (max-width: 1158px) {
   .customers-item:nth-last-child(-n + 3) {
     margin-bottom: 0;
   }

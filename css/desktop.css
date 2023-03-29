@@ -146,6 +146,9 @@
   .customers-item:last-child {
     margin-right: 0;
   }
+  .customers-item {
+    margin-bottom: 0;
+  }
 
   .footer {
     background-color: var(--headers-color);
