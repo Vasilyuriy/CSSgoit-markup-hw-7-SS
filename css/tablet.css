@@ -2,6 +2,7 @@
   .container {
     max-width: 767px;
   }
+  /*+++++++++++++++++++++++++ HEADER +++++++++++++++++++++++++*/
   .header-container {
     display: flex;
     align-items: center;
@@ -27,14 +28,6 @@
   .header-logo {
     margin-right: 120px;
   }
-
-  .menu-btn-open {
-    display: none;
-  }
-  .menu-container {
-    display: none;
-  }
-
   .header-link.current::after {
     content: "";
     position: absolute;
@@ -86,11 +79,20 @@
   .header-item:not(:last-child) {
     margin-right: 40px;
   }
+  /*+++++++++++++++++++++++++ MOBILE MENU +++++++++++++++++++++++++*/
+
+  .menu-btn-open {
+    display: none;
+  }
+  .menu-container {
+    display: none;
+  }
+
+  /*+++++++++++++++++++++++++ HERO SECTION +++++++++++++++++++++++++*/
 
   .hero {
     width: 100%;
     max-width: 767px;
-
     background-position: center;
     background-image: linear-gradient(
         rgba(46, 47, 66, 0.7),
@@ -118,10 +120,10 @@
     text-align: center;
   }
 
-  .team-list {
-    flex-direction: row;
-    flex-wrap: wrap;
+  /*+++++++++++++++++++++++++ MODAL +++++++++++++++++++++++++*/
+  .modal {
   }
+  /*+++++++++++++++++++++++++ ADVANTAGES +++++++++++++++++++++++++*/
 
   .advntg-container {
     display: flex;
@@ -131,8 +133,6 @@
     flex-direction: row;
     flex-wrap: wrap;
     gap: 24px;
-  }
-  .advntg-item {
   }
 
   .advntg-item:nth-last-child(-n + 2) {
@@ -150,6 +150,13 @@
     width: 64px;
     height: 64px;
   }
+
+  /*+++++++++++++++++++++++++ TEAM +++++++++++++++++++++++++*/
+
+  .team-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
   .team-list {
     flex-direction: row;
     flex-wrap: wrap;
@@ -162,6 +169,8 @@
     margin-bottom: 0;
   }
 
+  /*+++++++++++++++++++++++++ CUSTOMERS +++++++++++++++++++++++++*/
+
   .customers-list {
     display: flex;
     flex-direction: row;
@@ -170,25 +179,20 @@
   }
 
   .head-customers {
-    text-align: center;
   }
   .customers-item {
     width: 168px;
     height: 88px;
     margin-right: 24px;
-    margin-bottom: 72px;
   }
 
-  .modal {
-    width: 392px;
-    height: 586px;
-  }
+  /*+++++++++++++++++++++++++ FOOTER +++++++++++++++++++++++++*/
+
   .footer-container {
     flex-direction: row;
     flex-wrap: wrap;
     width: 565px;
   }
-
   .footer-box-wrap {
     display: flex;
     flex-direction: row;
@@ -209,9 +213,6 @@
     margin-left: 24px;
     margin-bottom: 0;
   }
-  .footer-frm-head {
-    justify-content: flex-start;
-  }
 
   .inpt-footer-email {
     width: 264px;
@@ -224,6 +225,7 @@
   }
 }
 
+/* <<<<<<<<<<<<<MEDIA RULES>>>>>>>>>>>> */
 @media screen and (min-width: 767px) and (max-width: 1158px) {
   .team-item:nth-child(2n) {
     margin-right: 0;
