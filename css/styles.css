@@ -486,7 +486,9 @@ button {
 }
 
 /*+++++++++++++++++++++++++ ADVANTAGES +++++++++++++++++++++++++*/
-
+.advntg-box {
+  display: none;
+}
 .advntg-title-hide {
   position: absolute;
   height: 1px;
