@@ -21,6 +21,7 @@
     <link rel="stylesheet" href="./css/desktop.css" />
   </head>
   <body>
+<!-- +++++++++++++++++HEADER+++++++++++++++++= -->
     <header class="header">
       <div class="container header-container">
         <nav class="header-nav">
@@ -40,20 +41,15 @@
            <address class="header-address">
           <ul class="header-list-address">
             <li class="header-item-address ">
-              <a href="mailto:info@devstudio.com" class="header-adrlink"
-                >info@devstudio.com</a
-              >
+              <a href="mailto:info@devstudio.com" class="header-adrlink">info@devstudio.com</a>
             </li>
-            <li class="header-item-address">
-              <a href="tel:+110001111111" class="header-adrlink"
-                >+11 (000) 111-11-11</a
-              >
+            <li class="header-item-address"><a href="tel:+110001111111" class="header-adrlink">+11 (000) 111-11-11</a>
             </li>
           </ul>
         </address>
         <button type="button" class="menu-btn-open js-open-menu"
           aria-expanded="false"
-          aria-controls="mobile-menu" >
+          aria-controls="mobile-menu">
         <svg class="burger" width="32" height="22" aria-label="Mobile menu switch">
               <use class="icon-menu" href="./images/symbol-defs2.svg#icon-menu-hamburger"></use>
             </svg>
@@ -83,6 +79,7 @@
               <a href="mailto:info@devstudio.com" class="mail-menu-link ">info@devstudio.com</a>
             </li>
             </ul>
+<!-- +++++++++++++++++MOBILE MENU+++++++++++++++++= -->
         <ul class="menu-social-list">
           <li class="menu-social-item"><a class="menu-social-link"
              href="">
@@ -110,18 +107,82 @@
             </a></li>
         </ul>
           </ul>
-        </div>
-             
+        </div>      
       </div>
     </header>
     <main>
-                                                                                             <!-- HERO SECTION -->
+<!-- +++++++++++++++++MODAL+++++++++++++++++= -->
+    <div class="backdrop is-hidden " data-modal>
+      <div class="modal" >
+        <button type="button" class="modal-close-btn" data-modal-close >
+          <svg class="modal-close-btn-icon" width="8px" height="8px">
+            <use href="./images/symbol-defs2.svg#close-x"></use>
+          </svg></button>
+
+      <form class="contacts-frm">
+        <p class="form-title">Leave your contacts and we will call you back</p>
+        <label class="modal-form-field" >
+          <span class="modal-frm-inpt-desc modal-frm-name " >Name</span>
+        <span class="modal-form-input-wrapper">
+          <input 
+          class="modal-form-input" 
+          type="text"
+          name="name"
+          pattern="[a-zA-Zа-яА-Я]+"
+          required
+          minlength="2"
+          >
+          <svg
+             class="modal-form-img" width="18" height="18">
+             <use href="./images/symbol-defs2.svg#icon-name-frm">
+          </svg>
+        </span>
+        </label>
+         <label class="modal-form-field">
+          <span class="modal-frm-inpt-desc">Phone</span>
+           <span class="modal-form-input-wrapper">
+          <input class="modal-form-input" type="number" name="phone-number"
+          pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}-[0-9]{3}"
+          title="xxx-xxx-xx-xx"
+          >
+           <svg
+             class="modal-form-img" width="18" height="24">
+             <use href="./images/symbol-defs2.svg#icon-phone-frm" >
+          </svg>
+        </span>
+        </label>
+         <label class="modal-form-field">
+          <span class="modal-frm-inpt-desc">Email</span>
+          <span class="modal-form-input-wrapper">
+          <input class="modal-form-input" type="email" name="email" pattern = "[A-Za-z0-9]">
+          <svg
+             class="modal-form-img" width="18" height="24">
+             <use href="./images/symbol-defs2.svg#icon-email-frm" >
+          </svg>
+          </span>
+        </label>
+         <label class="modal-form-field">
+          <span class="modal-frm-inpt-desc">Comment</span>
+          <textarea class="modal-form-textarea" placeholder="Text input" name="comment"></textarea>
+        </label>
+            <input type="checkbox" 
+            class="custom-checkbox" 
+            id="custom"
+             name="check-box-policy" 
+             value="agree"> 
+          <label for="custom" class="checkbox-text"> <span> I accept the terms and conditions of the &nbsp<a class="link-checkbox" href="">Privacy Policy </span></a>
+          </label>
+        <button class="modal-form-btn" type="submit">Send</button>
+         </form>
+      </div> 
+    </div>
+<!-- +++++++++++++++++HERO SECTION+++++++++++++++++= -->
       <section class="hero">
         <div class="container">
         <h1 class="hero-title">Effective Solutions for Your Business</h1>
         <button class="hero-btn" type="button" data-modal-open>Order Service</button>
       </section>
-                                                                                    <!-- ADVANTAGES -->
+<!-- +++++++++++++++++ADVANTAGES+++++++++++++++++= -->
       <section class="advntg section ">
        <div class="container advntg-container">
           <h2 class="advntg-title-hide">Advantages</h2>
@@ -177,7 +238,7 @@
           </ul>
        </div >
       </section>
-                                                                                             <!-- EXAMPLES OF WORK -->
+<!-- +++++++++++++++++EXAMPLES OF WORK+++++++++++++++++= -->
       <section class="exm">
         <div class="container">
         <h2 class="exm-title">What are we doing</h2>
@@ -212,8 +273,7 @@
         </ul>
         </div>
       </section>
-
-                                                                                           <!--OUR TEAM-->
+<!-- +++++++++++++++++++++TEAM+++++++++++++++++++++= -->
       <section class="team section">
      <div class="container">
           <h2 class="team-title">Our Team</h2>
@@ -367,7 +427,7 @@
           </ul>
      </div >
       </section>
-                                                                                             <!-- -------- customers -->
+<!-- +++++++++++++++++CUSTOMERS+++++++++++++++++= -->
       <section class="customers container section">
           <h2 class="head-customers">Customers</h2>
     <ul class="customers-list">
@@ -416,7 +476,7 @@
     </ul>
       </section>
     </main>
-                                        <!-- +++++++++++++++++++++++++++FOOTER++++++++++++++++++++++++++++++++ -->
+<!-- +++++++++++++++++FOOTER+++++++++++++++++= -->
     <footer class="footer">
       <div class="container footer-container">
         
@@ -457,8 +517,7 @@
             </a></li>
         </ul>
       </div></div>
-       
-
+  <!-- +++++++++++++++++FOOTER INPUT+++++++++++++++++= -->
       <div class="footer-box-with-frm">
         <p class="footer-frm-head">Subscribe</p>
         <form class="footer-frm">
@@ -471,73 +530,6 @@
       </div>
       </div>
     </footer>
-
-                                                                                  <!-- +++++++++++++++++MODAL+++++++++++++++++= -->
-    <div class="backdrop is-hidden " data-modal>
-      <div class="modal" >
-        <button type="button" class="modal-close-btn" data-modal-close >
-          <svg class="modal-close-btn-icon" width="8px" height="8px">
-            <use href="./images/symbol-defs2.svg#close-x"></use>
-          </svg></button>
-
-      <form class="contacts-frm">
-        <p class="form-title">Leave your contacts and we will call you back</p>
-        <label class="modal-form-field" >
-          <span class="modal-frm-inpt-desc modal-frm-name " >Name</span>
-        <span class="modal-form-input-wrapper">
-          <input 
-          class="modal-form-input" 
-          type="text"
-          name="name"
-          pattern="[a-zA-Zа-яА-Я]+"
-          required
-          minlength="2"
-          >
-          <svg
-             class="modal-form-img" width="18" height="18">
-             <use href="./images/symbol-defs2.svg#icon-name-frm">
-          </svg>
-        </span>
-        </label>
-         <label class="modal-form-field">
-          <span class="modal-frm-inpt-desc">Phone</span>
-           <span class="modal-form-input-wrapper">
-          <input class="modal-form-input" type="number" name="phone-number"
-          pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}-[0-9]{3}"
-          title="xxx-xxx-xx-xx"
-          >
-           <svg
-             class="modal-form-img" width="18" height="24">
-             <use href="./images/symbol-defs2.svg#icon-phone-frm" >
-          </svg>
-        </span>
-        </label>
-         <label class="modal-form-field">
-          <span class="modal-frm-inpt-desc">Email</span>
-          <span class="modal-form-input-wrapper">
-          <input class="modal-form-input" type="email" name="email" pattern = "[A-Za-z0-9]">
-          <svg
-             class="modal-form-img" width="18" height="24">
-             <use href="./images/symbol-defs2.svg#icon-email-frm" >
-          </svg>
-          </span>
-        </label>
-         <label class="modal-form-field">
-          <span class="modal-frm-inpt-desc">Comment</span>
-          <textarea class="modal-form-textarea" placeholder="Text input" name="comment"></textarea>
-        </label>
-            <input type="checkbox" 
-            class="custom-checkbox" 
-            id="custom"
-             name="check-box-policy" 
-             value="agree"> 
-          <label for="custom" class="checkbox-text"> <span> I accept the terms and conditions of the &nbsp<a class="link-checkbox" href="">Privacy Policy </span></a>
-          </label>
-        <button class="modal-form-btn" type="submit">Send</button>
-         </form>
-      </div> 
-    </div>
- 
    <script src="./js/modal.js"></script>
     <script src="./js/mobile-menu.js "></script>
 </body>
