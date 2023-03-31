@@ -98,7 +98,7 @@ button {
   stroke: var(--headers-color);
   width: 24px;
   height: 24px;
-
+  padding-bottom: 3px;
   border-radius: 50%;
   background-color: var(--text-for-pfooter-secondsection-color);
   border: 1px solid rgba(0, 0, 0, 0.1);
@@ -312,14 +312,14 @@ button {
   position: absolute;
   top: 24px;
   right: 24px;
+  stroke: var(--headers-color);
   width: 24px;
   height: 24px;
+  padding-bottom: 3px;
   border-radius: 50%;
   background-color: var(--text-for-pfooter-secondsection-color);
   border: 1px solid rgba(0, 0, 0, 0.1);
-  display: flex;
-  justify-content: center;
-  align-items: center;
+
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
     background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -830,10 +830,9 @@ button {
 }
 
 /*+++++++++++++++++++++++++ PORTFOLIO +++++++++++++++++++++++++*/
-
-/* .smain {
-  padding-top: 96px;
-  padding-bottom: 120 px;
+.smain {
+  padding-top: 48px;
+  padding-bottom: 48px;
 }
 .smain-title-hidden {
   position: absolute;
@@ -848,14 +847,10 @@ button {
   width: 1px;
 }
 .smain-list {
-  justify-content: center;
   display: flex;
-  margin-bottom: 72px;
+  gap: 24px;
+  flex-wrap: wrap;
 }
-.smain-list-item {
-  margin-right: 24px;
-}
-
 .smain-button {
   min-width: 69px;
   min-height: 48px;
@@ -873,7 +868,6 @@ button {
     color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
 .smain-button:hover,
 .smain-button:active,
 .smain-button:focus {
@@ -883,26 +877,30 @@ button {
   box-shadow: 0 2px 1px 0 rgba(0, 0, 0, 0.08);
   box-shadow: 0 3px 1px 0 rgba(0, 0, 0, 0.1);
 }
+
 .smain-list-examples {
   display: flex;
   flex-wrap: wrap;
   gap: 48px 24px;
+  align-items: center;
 }
 .cards {
   padding: 32px 16px;
-  width: 360px;
+  width: 396px;
   border-bottom: 1px solid #e7e9fc;
   border-left: 1px solid #e7e9fc;
   border-right: 1px solid #e7e9fc;
 }
 .smain-item {
-  width: 360px;
+  width: 396px;
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
 }
-.smain-item:nth-last-child(-n + 3) {
+
+/* .smain-item:nth-last-child(-n + 3) {
   padding-bottom: 120px;
-}
+} */
 .smain-title {
   font-weight: 500;
   font-size: 20px;
@@ -939,7 +937,7 @@ button {
 .smain-link:focus .overlay {
   transform: translate(0, 0);
 }
-.overlay {
+/* .overlay {
   transform: translate(0, 100%);
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
