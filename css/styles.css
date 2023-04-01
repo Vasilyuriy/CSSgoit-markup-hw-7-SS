@@ -31,8 +31,6 @@ ol {
 }
 img {
   display: block;
-  max-width: 100%;
-  height: auto;
 }
 button {
   cursor: pointer;
@@ -52,6 +50,9 @@ button {
 /*+++++++++++++++++++++++++ HEADER +++++++++++++++++++++++++*/
 .header {
   border-bottom: 1px solid #e7e9fc;
+  box-shadow: 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+  box-shadow: 0 1px 1px 0 rgba(46, 47, 66, 0.16);
+  box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08);
 }
 .header-container {
   display: flex;
@@ -119,6 +120,7 @@ button {
 .menu-container {
   position: fixed;
   display: flex;
+  flex-direction: column;
   top: 0;
   left: 0;
   width: 100%;
@@ -161,11 +163,7 @@ button {
   color: var(--hoover-color);
 }
 
-.address-social-wrap {
-  margin-top: auto;
-}
 .mobile-menu-contacts {
-  margin-top: auto;
   display: flex;
   flex-direction: column;
 }
@@ -180,6 +178,12 @@ button {
   line-height: 1.1;
   letter-spacing: 0.02px;
   color: var(--logo-button-color);
+}
+.menu-address-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: auto;
+  max-width: 380px;
 }
 .mobile-address-item.mail {
   font-size: 20px;
@@ -227,7 +231,7 @@ button {
 /*+++++++++++++++++++++++++ HERO SECTION  +++++++++++++++++++++++++*/
 
 .hero {
-  max-width: 428px;
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
   padding-top: 112px;
@@ -344,15 +348,17 @@ button {
 .form-title {
   text-align: center;
   font-family: inherit;
+  margin-bottom: 16px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02rem;
   color: var(--headers-color);
 }
+
 .modal-form-field {
   display: block;
-  margin-top: 8px;
+  margin-bottom: 8px;
   color: rgba(142, 143, 153, 1);
   font-family: inherit;
   font-weight: 400;
@@ -422,7 +428,7 @@ button {
   font-size: 12px;
   line-height: 1.3;
   letter-spacing: 0.04rem;
-  margin-top: 18px;
+  margin-top: 10px;
 }
 .modal-form-btn {
   display: flex;
@@ -864,6 +870,7 @@ button {
   display: flex;
   gap: 24px;
   flex-wrap: wrap;
+  padding-bottom: 48px;
 }
 .smain-button {
   min-width: 69px;
@@ -895,23 +902,29 @@ button {
 .smain-list-examples {
   display: flex;
   flex-wrap: wrap;
-  gap: 48px 24px;
+  /* gap: 48px; */
   align-items: center;
 }
 .cards {
   padding: 32px 16px;
-  width: 396px;
-  border-bottom: 1px solid #e7e9fc;
-  border-left: 1px solid #e7e9fc;
-  border-right: 1px solid #e7e9fc;
+  width: 100%;
 }
 .smain-item {
-  width: 396px;
   display: flex;
-  flex-wrap: wrap;
-  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  width: 397px;
+  border-right: 1px solid #e7e9fc;
+  border-top: 1px solid #e7e9fc;
+  border-left: 1px solid #e7e9fc;
+  border-bottom: 1px solid #e7e9fc;
 }
-
+@media screen and (max-width: 767px) {
+  .smain-item {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
 /* .smain-item:nth-last-child(-n + 3) {
   padding-bottom: 120px;
 } */
@@ -951,7 +964,7 @@ button {
 .smain-link:focus .overlay {
   transform: translate(0, 0);
 }
-/* .overlay {
+.overlay {
   transform: translate(0, 100%);
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -972,4 +985,4 @@ button {
   line-height: 1.5;
   letter-spacing: 0.02px;
   overflow: auto;
-} */
+}

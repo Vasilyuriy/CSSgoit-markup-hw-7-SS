@@ -21,6 +21,15 @@
   .header-list-address {
     display: flex;
   }
+  .header-adrlink {
+    color: var(--headers-color);
+    font-style: normal;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02px;
+  }
 
   /*+++++++++++++++++++++++++ HERO +++++++++++++++++++++++++*/
 
@@ -37,7 +46,6 @@
         rgba(46, 47, 66, 0.7)
       ),
       url("../images/hero-bg-desktop1x.jpg");
-    background-size: auto;
   }
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
@@ -106,6 +114,9 @@
     justify-content: center;
     align-items: center;
     justify-items: center;
+  }
+  .advntg-item-title {
+    margin-top: 8px;
   }
   .advntg-svg-item {
     width: 64px;
@@ -245,6 +256,10 @@
   }
 
   /*+++++++++++++++++++++++++ PORTFOLIO +++++++++++++++++++++++++*/
+
+  .smain-item:nth-last-child(3n) {
+    margin-right: 0;
+  }
 
   /* .smain {
   padding-top: 96px;
