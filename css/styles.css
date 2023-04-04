@@ -913,21 +913,17 @@ button {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 397px;
+  width: 100%;
+  margin-bottom: 48px;
   border-right: 1px solid #e7e9fc;
   border-top: 1px solid #e7e9fc;
   border-left: 1px solid #e7e9fc;
   border-bottom: 1px solid #e7e9fc;
 }
-@media screen and (max-width: 767px) {
-  .smain-item {
-    margin-left: auto;
-    margin-right: auto;
-  }
+.smain-item:last-child {
+  margin-bottom: 0;
 }
-/* .smain-item:nth-last-child(-n + 3) {
-  padding-bottom: 120px;
-} */
+
 .smain-title {
   font-weight: 500;
   font-size: 20px;

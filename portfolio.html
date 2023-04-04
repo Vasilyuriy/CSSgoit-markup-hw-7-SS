@@ -21,6 +21,7 @@
     <link rel="stylesheet" href="./css/desktop.css" />
   </head>
   <body>
+    <!-- +++++++++++++++++HEADER+++++++++++++++++= -->
     <header class="header">
       <div class="container header-container">
         <nav class="header-nav">
@@ -54,7 +55,7 @@
           </ul>
         </address>
 
-        <!-- /*+++++++++++++++++++++++++ MOBILE MENU +++++++++++++++++++++++++*/ -->
+        <!-- +++++++++++++++++MOBILE MENU+++++++++++++++++= -->
         <button
           type="button"
           class="menu-btn-open js-open-menu"
@@ -75,9 +76,9 @@
         </button>
         <div class="menu-container js-menu-container" id="mobile-menu">
           <button class="menu-btn-close js-close-menu">
-            <svg width="32" height="22">
+            <svg width="8" height="8">
               <use
-                class="icon-close"
+                class="close-x"
                 href="./images/symbol-defs2.svg#close-x"
               ></use>
             </svg>
@@ -94,49 +95,49 @@
             <li class="mobile-menu-item">
               <a class="nav-menu-link" href="">Contacts</a>
             </li>
-            <div class="address-social-wrap"></div>
-            <ul class="mobile-menu-contacts">
-              <li class="mobile-address-item">
-                <a href="tel:+110001111111" class="phone-menu-link"
-                  >+11 (000) 111-11-11</a
-                >
-              </li>
-              <li class="mobile-address-item mail">
-                <a href="mailto:info@devstudio.com" class="mail-menu-link"
-                  >info@devstudio.com</a
-                >
-              </li>
-            </ul>
-            <ul class="menu-social-list">
-              <li class="menu-social-item">
-                <a class="menu-social-link" href="">
-                  <svg class="menu-social-icon">
-                    <use href="./images/symbol-defs2.svg#instagram"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="menu-social-item">
-                <a class="menu-social-link" href="">
-                  <svg class="menu-social-icon">
-                    <use href="./images/symbol-defs2.svg#twitter"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="menu-social-item">
-                <a class="menu-social-link" href="">
-                  <svg class="menu-social-icon">
-                    <use href="./images/symbol-defs2.svg#facebook"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="menu-social-item">
-                <a class="menu-social-link" href="">
-                  <svg class="menu-social-icon">
-                    <use href="./images/symbol-defs2.svg#linkedin"></use>
-                  </svg>
-                </a>
-              </li>
-            </ul>
+          </ul>
+          <div class="menu-address-wrapper"></div>
+          <ul class="mobile-menu-contacts">
+            <li class="mobile-address-item">
+              <a href="tel:+110001111111" class="phone-menu-link"
+                >+11 (000) 111-11-11</a
+              >
+            </li>
+            <li class="mobile-address-item mail">
+              <a href="mailto:info@devstudio.com" class="mail-menu-link"
+                >info@devstudio.com</a
+              >
+            </li>
+          </ul>
+          <ul class="menu-social-list">
+            <li class="menu-social-item">
+              <a class="menu-social-link" href="">
+                <svg class="menu-social-icon">
+                  <use href="./images/symbol-defs2.svg#instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="menu-social-item">
+              <a class="menu-social-link" href="">
+                <svg class="menu-social-icon">
+                  <use href="./images/symbol-defs2.svg#twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="menu-social-item">
+              <a class="menu-social-link" href="">
+                <svg class="menu-social-icon">
+                  <use href="./images/symbol-defs2.svg#facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="menu-social-item">
+              <a class="menu-social-link" href="">
+                <svg class="menu-social-icon">
+                  <use href="./images/symbol-defs2.svg#linkedin"></use>
+                </svg>
+              </a>
+            </li>
           </ul>
         </div>
       </div>
@@ -525,60 +526,71 @@
 
     <!-- +++++++++++++++++FOOTER+++++++++++++++++= -->
 
-      <footer class="footer">
+    <footer class="footer">
       <div class="container footer-container">
-        
         <div class="footer-box-wrap">
-          <div >
-        <a class="footer-logo" href="./index.html"> <span>Web</span>Studio</a>
-        <p class="footer-t">
-          Increase the flow of customers and sales for your business with digital
-          marketing & growth solutions.
-        </p>
-      </div>
-      <div class="social-box"> 
-        <p class="footer-p">Social Media</p>
-        <ul class="footer-social-list">
-          <li class="footer-social-item"><a class="footer-social-link"
-             href="">
-            <svg class="footer-social-icon">
-              <use href="./images/symbol-defs2.svg#instagram"  ></use>
-            </svg>
-            </a></li>
-          <li class="footer-social-item"><a class="footer-social-link"
-             href="">
-            <svg class="footer-social-icon">
-              <use href="./images/symbol-defs2.svg#twitter"></use>
-            </svg>
-            </a></li>
-          <li class="footer-social-item"><a class="footer-social-link"
-             href="">
-            <svg class="footer-social-icon">
-              <use href="./images/symbol-defs2.svg#facebook"></use>
-            </svg>
-            </a></li>
-          <li class="footer-social-item"><a class="footer-social-link"
-             href="">
-            <svg class="footer-social-icon">
-              <use href="./images/symbol-defs2.svg#linkedin"></use>
-            </svg>
-            </a></li>
-        </ul>
-      </div></div>
-  <!-- +++++++++++++++++FOOTER INPUT+++++++++++++++++= -->
-      <div class="footer-box-with-frm">
-        <p class="footer-frm-head">Subscribe</p>
-        <form class="footer-frm">
-          <input class="inpt-footer-email" type="email" placeholder="E-mail" name="users-email">
-          <button type="submit" class="btn-submit">Subscribe<svg
-            class="btn-subscribe-icon">
-            <use href="./images/symbol-defs2.svg#icon-telegram"  >
-         </svg></button>
-        </form>
-      </div>
+          <div>
+            <a class="footer-logo" href="./index.html">
+              <span>Web</span>Studio</a
+            >
+            <p class="footer-t">
+              Increase the flow of customers and sales for your business with
+              digital marketing & growth solutions.
+            </p>
+          </div>
+          <div class="social-box">
+            <p class="footer-p">Social Media</p>
+            <ul class="footer-social-list">
+              <li class="footer-social-item">
+                <a class="footer-social-link" href="">
+                  <svg class="footer-social-icon">
+                    <use href="./images/symbol-defs2.svg#instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer-social-item">
+                <a class="footer-social-link" href="">
+                  <svg class="footer-social-icon">
+                    <use href="./images/symbol-defs2.svg#twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer-social-item">
+                <a class="footer-social-link" href="">
+                  <svg class="footer-social-icon">
+                    <use href="./images/symbol-defs2.svg#facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer-social-item">
+                <a class="footer-social-link" href="">
+                  <svg class="footer-social-icon">
+                    <use href="./images/symbol-defs2.svg#linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- +++++++++++++++++FOOTER INPUT+++++++++++++++++= -->
+        <div class="footer-box-with-frm">
+          <p class="footer-frm-head">Subscribe</p>
+          <form class="footer-frm">
+            <input
+              class="inpt-footer-email"
+              type="email"
+              placeholder="E-mail"
+              name="users-email"
+            />
+            <button type="submit" class="btn-submit">
+              Subscribe<svg class="btn-subscribe-icon">
+                <use href="./images/symbol-defs2.svg#icon-telegram" />
+              </svg>
+            </button>
+          </form>
+        </div>
       </div>
     </footer>
-
     <script src="./js/modal.js"></script>
     <script src="./js/mobile-menu.js "></script>
   </body>
